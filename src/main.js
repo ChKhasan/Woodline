@@ -18,7 +18,7 @@ import {
   faTruckFast,
 } from "@fortawesome/free-solid-svg-icons";
 import router from './router'
-import { faHeart, faUser } from "@fortawesome/free-regular-svg-icons";
+import { faEye, faHeart, faUser } from "@fortawesome/free-regular-svg-icons";
 import {
   faFacebookF,
   faInstagram,
@@ -49,7 +49,8 @@ library.add(
   faStar,
   faPlus,
   faMinus,
-  faTruckFast
+  faTruckFast,
+  faEye
 );
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 Aos.init();

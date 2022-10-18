@@ -1,7 +1,7 @@
 <template lang="html">
   <div class="journal-card">
     <a class="j-card-img">
-      <img src="../../public/images/blog_01.jpg" alt="" />
+      <img :src="img" alt="" />
     </a>
     <div class="j-card-body pt-5">
 
@@ -17,14 +17,18 @@
             work &amp; casually.
           </p>
         </div>
-        <div class="j-card-btn">
-          <a href=""> Read more</a>
-        </div>
+        <BorderBlackBtn name="Read more"/>
     </div>
   </div>
 </template>
 <script>
-export default {};
+import BorderBlackBtn from "../smallComponents/BorderBlackBtn.vue"
+export default {
+  props: ["img"],
+  components: {
+    BorderBlackBtn
+  }
+};
 </script>
 <style lang="css">
 .j-card-img {
@@ -74,16 +78,5 @@ export default {};
     line-height: 1.63;
     color: #777;
 } 
-.j-card-btn a{
-    border-color: rgba(0,0,0,.11)!important;
-    font-size: 14px!important;
-    border-bottom: 1px solid #e4e4e4!important;
-    font-weight: 700 !important;
-    text-transform: uppercase!important;
-    font-family: "Poppins",sans-serif;
-    transition: .4s;
-}
-.j-card-btn a:hover {
-    border-bottom: 1px solid #000!important;
-}
+
 </style>

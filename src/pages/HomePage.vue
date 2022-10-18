@@ -1,10 +1,10 @@
-<template lang="">
+<template lang="html">
   <div>
     <v-scroll-to-top></v-scroll-to-top>
     <NavbarComp />
     <BannerComp />
     <CardBox />
-    <TitleMayYouLikeThis />
+    <TitleMayYouLikeThis title="Our Journal"/>
     <JournalComp /> 
     <ContactCardBox />
     <FooterComp />

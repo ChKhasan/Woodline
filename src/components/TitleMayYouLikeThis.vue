@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-12 title_may">
                     <h2>
-                        May You Like This
+                        {{title}}
                     </h2>
                 </div>
             </div>
@@ -14,7 +14,7 @@
 <script>
 
 export default {
-    
+    props: ['title']
 }
 </script>
 <style lang="css">

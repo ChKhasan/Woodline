@@ -3,9 +3,9 @@
     <div class="container_block container-xxl">
       <div class="row">
         <div class="col-12 j-card-controller">
-          <JournalCard />
-          <JournalCard />
-          <JournalCard />
+          <JournalCard img="./images/blog_01.jpg" />
+          <JournalCard img="./images/blog_02.jpg" />
+          <JournalCard img="./images/blog_03.jpg" />
         </div>
       </div>
     </div>
@@ -21,9 +21,9 @@ export default {
 </script>
 <style lang="css">
 .j-card-controller {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-column-gap: 30px;
-    padding-bottom: 120px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 30px;
+  padding-bottom: 120px;
 }
 </style>

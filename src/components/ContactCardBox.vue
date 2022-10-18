@@ -2,9 +2,11 @@
   <div>
     <div class="container_block container-xxl">
       <div class="row">
-        <div class="col-12 d-flex">
-          <ContactCard />
-          <ContactCard />
+        <div class="col-xl-6 my-4">
+          <ContactCard name="follow us" img="images/banner-02.jpg"/>
+        </div>
+        <div class="col-xl-6 my-4">
+          <ContactCard name="follow us" img="images/banner-01.jpg"/>
         </div>
       </div>
     </div>
@@ -18,4 +20,10 @@ export default {
   },
 };
 </script>
-<style lang="css"></style>
+<style lang="css">
+.contact-card-controller {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 30px;
+}
+</style>

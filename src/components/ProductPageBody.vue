@@ -243,19 +243,19 @@ export default {
   components: {
     InformationTab,
   },
-  methods: {
-    takeColor(e) {
-      console.log(e);
-      const take = document.querySelectorAll(".list-inline-item");
-      take.forEach((item) => {
-        item.classList.remove("selected");
-      });
-      e.target.className === "list-inline-item"
-        ? e.target.classList.add("selected")
-        : e.target.parentNode.classList.add("selected");
+    methods: {
+      takeColor(e) {
+        console.log(e);
+        const take = document.querySelectorAll(".list-inline-item");
+        take.forEach((item) => {
+          item.classList.remove("selected");
+        });
+        e.target.className === "list-inline-item"
+          ? e.target.classList.add("selected")
+          : e.target.parentNode.classList.add("selected");
+      },
     },
-  },
-};
+  };
 </script>
 <style lang="css">
 .product_info_img {
