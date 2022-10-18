@@ -2,22 +2,40 @@
   <div>
     <VueSlickCarousel v-bind="slickOptions">
       <div class="mxw-100">
-        <ProductCard />
+        <ProductCard  data-aos="fade-up"
+        data-aos-delay="400"
+        data-aos-duration="900"
+        img="images/product-10.jpg"/>
       </div>
       <div class="mxw-100">
-        <ProductCard />
+        <ProductCard  data-aos="fade-up"
+        data-aos-delay="400"
+        data-aos-duration="900"
+        img="images/product-10.jpg"/>
       </div>
       <div class="mxw-100">
-        <ProductCard />
+        <ProductCard  data-aos="fade-up"
+        data-aos-delay="400"
+        data-aos-duration="900"
+        img="images/product-10.jpg"/>
       </div>
       <div class="mxw-100">
-        <ProductCard />
+        <ProductCard  data-aos="fade-up"
+        data-aos-delay="400"
+        data-aos-duration="900"
+        img="images/product-10.jpg"/>
       </div>
       <div class="mxw-100">
-        <ProductCard />
+        <ProductCard  data-aos="fade-up"
+        data-aos-delay="400"
+        data-aos-duration="900"
+        img="images/product-10.jpg"/>
       </div>
       <div class="mxw-100">
-        <ProductCard />
+        <ProductCard  data-aos="fade-up"
+        data-aos-delay="400"
+        data-aos-duration="900"
+        img="images/product-10.jpg"/>
       </div>
     </VueSlickCarousel>
   </div>
@@ -26,7 +44,7 @@
 import VueSlickCarousel from "vue-slick-carousel";
 import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
 import "vue-slick-carousel/dist/vue-slick-carousel.css";
-import ProductCard from "../smallComponents/ProductCard.vue";
+import ProductCard  from "../smallComponents/ProductCard.vue";
 export default {
   data() {
     return {

@@ -245,31 +245,106 @@
           </div>
         </div>
         <div class="shop-card-controller">
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
+          <ProductCard  data-aos="fade-up"
+        data-aos-delay="400"
+        data-aos-duration="900"
+        img="images/product-10.jpg"/>
+          <ProductCard  data-aos="fade-up"
+        data-aos-delay="400"
+        data-aos-duration="900"
+        img="images/product-10.jpg"/>
+          <ProductCard  data-aos="fade-up"
+        data-aos-delay="400"
+        data-aos-duration="900"
+        img="images/product-10.jpg"/>
+          <ProductCard  data-aos="fade-up"
+        data-aos-delay="400"
+        data-aos-duration="900"
+        img="images/product-10.jpg"/>
+          <ProductCard  data-aos="fade-up"
+        data-aos-delay="400"
+        data-aos-duration="900"
+        img="images/product-10.jpg"/>
+          <ProductCard  data-aos="fade-up"
+        data-aos-delay="400"
+        data-aos-duration="900"
+        img="images/product-10.jpg"/>
+          <ProductCard  data-aos="fade-up"
+        data-aos-delay="400"
+        data-aos-duration="900"
+        img="images/product-10.jpg"/>
+          <ProductCard  data-aos="fade-up"
+        data-aos-delay="400"
+        data-aos-duration="900"
+        img="images/product-10.jpg"/>
+          <ProductCard  data-aos="fade-up"
+        data-aos-delay="400"
+        data-aos-duration="900"
+        img="images/product-10.jpg"/>
+          <ProductCard  data-aos="fade-up"
+        data-aos-delay="400"
+        data-aos-duration="900"
+        img="images/product-10.jpg"/>
+          <ProductCard  data-aos="fade-up"
+        data-aos-delay="400"
+        data-aos-duration="900"
+        img="images/product-10.jpg"/>
+          <ProductCard  data-aos="fade-up"
+        data-aos-delay="400"
+        data-aos-duration="900"
+        img="images/product-10.jpg"/>
+          <ProductCard  data-aos="fade-up"
+        data-aos-delay="400"
+        data-aos-duration="900"
+        img="images/product-10.jpg"/>
+          <ProductCard  data-aos="fade-up"
+        data-aos-delay="400"
+        data-aos-duration="900"
+        img="images/product-10.jpg"/>
+          <ProductCard  data-aos="fade-up"
+        data-aos-delay="400"
+        data-aos-duration="900"
+        img="images/product-10.jpg"/>
+          <ProductCard  data-aos="fade-up"
+        data-aos-delay="400"
+        data-aos-duration="900"
+        img="images/product-10.jpg"/>
+          <ProductCard  data-aos="fade-up"
+        data-aos-delay="400"
+        data-aos-duration="900"
+        img="images/product-10.jpg"/>
+          <ProductCard  data-aos="fade-up"
+        data-aos-delay="400"
+        data-aos-duration="900"
+        img="images/product-10.jpg"/>
+          <ProductCard  data-aos="fade-up"
+        data-aos-delay="400"
+        data-aos-duration="900"
+        img="images/product-10.jpg"/>
+          <ProductCard  data-aos="fade-up"
+        data-aos-delay="400"
+        data-aos-duration="900"
+        img="images/product-10.jpg"/>
+          <ProductCard  data-aos="fade-up"
+        data-aos-delay="400"
+        data-aos-duration="900"
+        img="images/product-10.jpg"/>
+          <ProductCard  data-aos="fade-up"
+        data-aos-delay="400"
+        data-aos-duration="900"
+        img="images/product-10.jpg"/>
+          <ProductCard  data-aos="fade-up"
+        data-aos-delay="400"
+        data-aos-duration="900"
+        img="images/product-10.jpg"/>
+          <ProductCard  data-aos="fade-up"
+        data-aos-delay="400"
+        data-aos-duration="900"
+        img="images/product-10.jpg"/>
+          <ProductCard  data-aos="fade-up"
+        data-aos-delay="400"
+        data-aos-duration="900"
+        img="images/product-10.jpg"/>
         </div>
         <div class="shop-pagination d-flex justify-content-center pt-5">
           <el-pagination layout="prev, pager, next" :pager-count="4" :total="70">
