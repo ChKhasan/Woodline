@@ -114,7 +114,7 @@ a {
   height: 42px;
   position: absolute;
   /* display: none !important; */
-  transition: 0.5s;
+  transition: .5s;
   opacity: 0;
 }
 .content-change-vertical svg {
@@ -137,19 +137,19 @@ a {
 
 .content-change-vertical a:first-child {
   left: 0px !important;
-  transition-delay: 0.1s;
+  transition: bottom 0.5s 0.1s;
 }
 .content-change-vertical a:last-child {
   left: 25% !important;
-  transition-delay: 0.2s;
+  transition: bottom 0.5s 0.2s;
 }
 .content-change-vertical a:nth-child(2) {
   left: 50%;
-  transition-delay: 0.3s;
+  transition: bottom 0.5s 0.3s;
 }
 .content-change-vertical a:nth-child(3) {
   left: 75%;
-  transition-delay: 0.4s;
+  transition: bottom 0.5s 0.4s;
 }
 .product_card:hover .add-to-cart {
   bottom: 0 !important;

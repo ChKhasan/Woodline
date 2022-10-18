@@ -1,5 +1,5 @@
 <template lang="html">
-  <div>
+  <div class="card-carousel-product">
     <VueSlickCarousel v-bind="slickOptions">
       <div class="mxw-100">
         <ProductCard  data-aos="fade-up"
@@ -93,5 +93,8 @@ export default {
 .mxw-100 {
   padding-right: 15px;
   padding-left: 15px;
+}
+.card-carousel-product .slick-arrow {
+  display: none !important;
 }
 </style>

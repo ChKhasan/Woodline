@@ -3,7 +3,6 @@
     <div
       class="banner_comp d-flex flex-column justify-content-center bg-img-cover-center vh-100 custom-height-sm"
     >
-     <NavbarComp />
       <div class="d-flex flex-column h-100 justify-content-center">
         <div class="container_block container-xxl">
           <div>

@@ -14,7 +14,7 @@
                 <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
 
                 <font-awesome-icon
-                  icon="fa-sharp fa-solid fa-magnifying-glass"
+                  icon="fa-solid fa-magnifying-glass"
                 />
                 <span class="d-none d-xl-inline-block mx-2 font-weight-500">
                   Search
@@ -148,9 +148,12 @@
               class="navbar-toggler border-0 px-0 canvas-toggle"
               type="button"
               data-canvas="true"
+              @click="toggle"
             >
               <span class="fs-24 toggle-icon"></span>
             </button>
+           
+ 
           </div>
           <div class="d-flex justify-content-center col-8">
             <a href="" class="navbar-brand">
@@ -168,13 +171,23 @@
   </div>
 </template>
 <script>
+import Drawer from "vue-simple-drawer";
+
 export default {
+  name: "data-center",
   data() {
     return {
+      open: true,
       drawer: false,
     };
   },
+  components: {
+    Drawer
+  },
   methods: {
+    toggle() {
+      this.open = !this.open
+    },
     func() {
       var container = this.$el.querySelector("#container");
       container.scrollTop = container.scrollHeight;
@@ -227,7 +240,7 @@ export default {
   transition: 1s;
 }
 .dropdown_hover:hover + .dropdown-bottom {
-  top: 150%;
+  top: 100%;
   display: flex;
   opacity: 1;
 }
@@ -248,7 +261,7 @@ export default {
   position: absolute;
   background: white;
   /* bottom: -170px; */
-  top: 170%;
+  top: 150%;
 
   z-index: 1000 !important;
   display: none;

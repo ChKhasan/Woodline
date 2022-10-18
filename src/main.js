@@ -27,7 +27,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import VScrollToTop from 'v-scroll-to-top'
 import VueCarousel from 'vue-carousel';
- 
+import "ant-design-vue/dist/antd.css";
 Vue.use(VueCarousel);
 
  

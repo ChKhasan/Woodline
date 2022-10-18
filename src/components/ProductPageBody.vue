@@ -124,7 +124,7 @@
                   for="number"
                   >Quantity:
                 </label>
-                <div class="d-flex w-100">
+                <div class="d-flex quality_resp w-100">
                   <div
                     class="col-sm-3 control_quality d-flex justify-content-between"
                   >
@@ -136,7 +136,7 @@
                       <font-awesome-icon icon="fa-solid fa-plus" />
                     </a>
                   </div>
-                  <div class="col-sm-9 px-2">
+                  <div class="col-sm-9 ml-2">
                     <button type="submit" class="btn btn-block">
                       add to cart
                     </button>
@@ -243,19 +243,19 @@ export default {
   components: {
     InformationTab,
   },
-    methods: {
-      takeColor(e) {
-        console.log(e);
-        const take = document.querySelectorAll(".list-inline-item");
-        take.forEach((item) => {
-          item.classList.remove("selected");
-        });
-        e.target.className === "list-inline-item"
-          ? e.target.classList.add("selected")
-          : e.target.parentNode.classList.add("selected");
-      },
+  methods: {
+    takeColor(e) {
+      console.log(e);
+      const take = document.querySelectorAll(".list-inline-item");
+      take.forEach((item) => {
+        item.classList.remove("selected");
+      });
+      e.target.className === "list-inline-item"
+        ? e.target.classList.add("selected")
+        : e.target.parentNode.classList.add("selected");
     },
-  };
+  },
+};
 </script>
 <style lang="css">
 .product_info_img {
@@ -363,8 +363,8 @@ export default {
 .control_quality {
   display: flex;
   align-items: center;
-  /* width: 100%; */
-  height: 55px;
+  min-width: 100px;
+  height: 45px;
   padding: 0.71875rem 1.25rem;
   font-size: 1rem;
   font-weight: 400;
@@ -375,6 +375,18 @@ export default {
   border-radius: 0;
   box-shadow: none;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.ml-2 {
+  margin-left: 8px !important;
+}
+@media (max-width: 768px) {
+  .control_quality {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .quality_resp {
+    flex-direction: column;
+  }
 }
 .control_quality a {
   color: #000 !important;

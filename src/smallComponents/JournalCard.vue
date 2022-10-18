@@ -1,5 +1,5 @@
 <template lang="html">
-  <div class="journal-card">
+  <div class="journal-card mt-5">
     <a class="j-card-img">
       <img :src="img" alt="" />
     </a>
@@ -78,5 +78,7 @@ export default {
     line-height: 1.63;
     color: #777;
 } 
-
+.journal-card {
+  cursor: pointer;
+}
 </style>

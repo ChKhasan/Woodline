@@ -1,5 +1,5 @@
 <template lang="">
-  <div class="container-xxl container_block card_box">
+  <div class=" container_block card_box">
     <div class="d-grid g-1 g-sm-2 g-lg-4 grid-gap grid-container">
       <ProductCard
         data-aos="fade-up"

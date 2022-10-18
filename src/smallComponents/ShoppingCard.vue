@@ -1,7 +1,7 @@
 <template lang="">
   <div
     class="shopping_card gr-start-lg-2 grid-item px-sm-5 px-2 py-sm-4 py-2"
-    style="background-image: url(images/c_18.jpg)"
+    style="background-image: url(images/c_18.jpg)" 
   >
     <div class="sh_control_box d-flex flex-column justify-content-between">
       <div class="sh_title">
@@ -24,6 +24,7 @@ export default {};
   background-size: cover;
   display: grid;
   height: 100%;
+  cursor: pointer;
 }
 .sh_title {
   max-width: 300px;

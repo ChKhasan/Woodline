@@ -1,28 +1,60 @@
 <template lang="html">
-  <div>
-    <el-tabs v-model="activeName" @tab-click="handleClick">
-      <el-tab-pane label="Description" name="first">
-        <DescriptionComp
-      /></el-tab-pane>
-      <el-tab-pane
-        label="
-Infomation"
-        name="second"
-        ><InformationComp
-      /></el-tab-pane>
-      <el-tab-pane
-        label="
-Reviews (3)"
-        name="third"
-        ><CommentsComp
-      /></el-tab-pane>
-    </el-tabs>
+  <div class="mt-5">
+    <div class="d-none d-md-block">
+
+      <el-tabs v-model="activeName" @tab-click="handleClick">
+        <el-tab-pane label="Description" name="first">
+          <DescriptionComp
+        /></el-tab-pane>
+        <el-tab-pane
+          label="
+  Infomation"
+          name="second"
+          ><InformationComp
+        /></el-tab-pane>
+        <el-tab-pane
+          label="
+  Reviews (3)"
+          name="third"
+          ><CommentsComp
+        /></el-tab-pane>
+      </el-tabs>
+    </div>
+    <div class="d-md-none">
+
+      <vsa-list>
+        <!-- Here you can use v-for to loop through items  -->
+        <vsa-item>
+          <vsa-heading> Description </vsa-heading>
+  
+          <vsa-content>
+            <DescriptionComp />
+          </vsa-content>
+        </vsa-item>
+        <vsa-item>
+          <vsa-heading> Infomation </vsa-heading>
+  
+          <vsa-content>
+            <InformationComp />
+          </vsa-content>
+        </vsa-item>
+        <vsa-item>
+          <vsa-heading> Reviews (3) </vsa-heading>
+  
+          <vsa-content>
+            <CommentsComp />
+          </vsa-content>
+        </vsa-item>
+      </vsa-list>
+    </div>
   </div>
 </template>
 <script>
 import DescriptionComp from "../components/DescriptionComp.vue";
 import InformationComp from "../components/InformationComp.vue";
 import CommentsComp from "../components/CommentsComp.vue";
+import { VsaList, VsaItem, VsaHeading, VsaContent } from "vue-simple-accordion";
+import "vue-simple-accordion/dist/vue-simple-accordion.css";
 export default {
   data() {
     return {
@@ -33,6 +65,10 @@ export default {
     DescriptionComp,
     InformationComp,
     CommentsComp,
+    VsaList,
+    VsaItem,
+    VsaHeading,
+    VsaContent,
   },
   methods: {
     handleClick(tab, event) {
@@ -73,5 +109,25 @@ export default {
   .el-tabs__item {
     font-size: 32px !important;
   }
+}
+.vsa-item__trigger__icon {
+  display: none !important;
+}
+.vsa-item__trigger:hover {
+  outline: none;
+  background-color: white !important;
+  color: #000 !important;
+}
+
+.vsa-item__heading {
+  border: 1px solid #e4e4e4 !important;
+}
+.vsa-item__content {
+  border: 1px solid #e4e4e4 !important;
+  margin-top: 20px;
+}
+.vsa-list {
+  border: none !important;
+  --vsa-border: none !important;
 }
 </style>

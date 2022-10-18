@@ -3,7 +3,7 @@
     <div class="container-fluid bg-color py-4 mt-70">
       <div class="container-shop container-xxl">
         <div class="row">
-          <div class="col-6">
+          <div class="col-md-8">
             <div class="bread_crumb_box">
               <router-link class="bread_crumb" to="/"> Home </router-link>
               <span>/</span>
